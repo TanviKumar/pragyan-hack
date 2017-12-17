@@ -1,3 +1,6 @@
 .bg-primary{
 	background-color: #331f96!important;
 }
+.rightFloat{
+	float: right;
+}
