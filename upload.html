@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>SurveyStore</title>  
+        <title>DataBridge</title>  
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Verified<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Verified</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">UnVerified</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Upload</a>
+                        <a class="nav-link" href="#">Upload<span class="sr-only">(current)</span></a>
                     </li>
                     <li>
                         <a class="nav-link" href="#">About</a>
@@ -37,37 +37,29 @@
         </nav>
 
         <br>
-        <div class="container">
+
+
+        <div class='container'>
             <nav class="navbar navbar-light" style="background-color: #2d3666;">
-                <h2><span class="badge badge-pill" style="background-color: #2d3666;" >Explore Survey Data</span></h2>
+                <h2><span class="badge badge-pill" style = "background-color: #2d3666;">Enter your survey into the chain</span></h2>
             </nav>
             <br> 
-            
-            <li id="newsList"></li>
-              <div class="card">
-                <div class="card-block">
-                  <h4 class="card-title">Survey 1</h4>
-                  <p class="card-text">Brief Description.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Approved</small>
-                  <a href="" class="badge badge-pill badge-danger">Flag</a>
-                  <a href="#" class="btn btn-primary rightFloat">Download</a>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-block">
-                  <h4 class="card-title">Survey 2</h4>
-                  <p class="card-text">Brief Description.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Approved</small>
-                  <a href="" class="badge badge-pill badge-danger">Flag
-                  <a href="#" class="btn btn-primary rightFloat">Download</a>
-                </div>
-              </div>
-
+            <div class="form-group">
+              <label for="exampleTextarea">Survey Name</label>
+              <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">Brief Description</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">Upload file containing survey data</label>
+              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              <small id="fileHelp" class="form-text text-muted">File containing all the data of your survey. Compressed files are encouraged.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        <br> <br>
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

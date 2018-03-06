@@ -4,3 +4,12 @@
 .rightFloat{
 	float: right;
 }
+body{
+	background-color: #92e8e8;
+}
+h1{
+	color: #440099;
+}
+li{
+	list-style: none;
+}
